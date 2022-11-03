@@ -67,3 +67,119 @@ img {
 .container {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#header {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  overflow: hidden;
+}
+#header h1, #header nav {
+  width: 100%;
+}
+@media all and (min-width: 992px) {
+  #header h1, #header nav {
+    width: 50%;
+  }
+}
+#header__nav {
+  background-color: rgba(0, 0, 0, 0.2117647059);
+  color: #fff;
+  text-align: center;
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media all and (min-width: 992px) {
+  #header__nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+#header__nav h1 a {
+  font-family: "Ephesis", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+#header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+}
+#header__nav li + li {
+  margin-left: 0.5rem;
+}
+#header__nav li:last-child a {
+  border-color: #fff !important;
+}
+#header__nav a {
+  font-size: 1rem;
+  border-radius: 2rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border-color: transparent; /* necessary to align all the links in the navbar */
+  padding: 0.5rem;
+}
+@media all and (min-width: 768px) {
+  #header__nav a {
+    padding: 0.5rem 1rem;
+  }
+}
+#header__nav a:hover, #header__nav a:focus, #header__nav a:active {
+  background-color: #7bafc9;
+}
+#header__intro {
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.2117647059);
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px -1px #000, 1px 0px #000, 0px 1px #000, -1px 0px #000;
+}
+@media all and (min-width: 768px) {
+  #header__intro {
+    text-shadow: none;
+  }
+}
+#header__intro h2, #header__intro h3 {
+  padding: 0.5rem 0;
+}
+#header__intro h2 {
+  font-family: "Ephesis", cursive;
+  font-size: 4rem;
+}
+#header__intro h3 {
+  font-size: 1rem;
+}

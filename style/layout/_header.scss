@@ -1,0 +1,92 @@
+#header {
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  overflow: hidden;
+  h1, nav {
+    width: 100%;
+    @media all and (min-width: 992px) {
+      width: 50%;
+    }
+  }
+  &__nav {
+    background-color: $grey-transparent;
+    color: $white;
+    text-align: center;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media all and (min-width: 992px) {
+      flex-direction: row;
+    }
+    h1 {
+      a {
+        font-family: 'Ephesis', cursive;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    li {
+      + li {
+        margin-left: 0.5rem
+      }
+      &:last-child a {
+        border-color: $white!important
+      }
+    }
+    a {
+      font-size: 1rem;
+      border-radius: 2rem;
+      border-style: solid;
+      border-width: 0.1rem;
+      transition: all 0.3s linear;
+      color: $white;
+      display: inline-block;
+      text-decoration: none;
+      border-color: transparent; /* necessary to align all the links in the navbar */
+      padding: 0.5rem;
+      @media all and (min-width: 768px) {
+        padding: 0.5rem 1rem;
+      }
+      &:hover, &:focus, &:active {
+        background-color: $blue_dark;
+      }
+    }
+  }
+  &__intro {
+    font-size: 1rem;
+    background-color: $grey-transparent;
+    color: $white;
+    text-align: center;
+    text-shadow:
+        0px -1px $black,
+        1px  0px $black,
+        0px  1px $black,
+      -1px  0px $black;
+    @media all and (min-width: 768px) {
+      text-shadow: none;
+    }
+    h2, h3 {
+      padding: 0.5rem 0;
+    }
+    h2 {
+      font-family: 'Ephesis', cursive;
+      font-size: 4rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}
