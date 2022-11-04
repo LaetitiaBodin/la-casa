@@ -37,10 +37,131 @@
         <h3>Apartments - Houses - Mansions</h3>
       </div>
     </header>
-    <main>
-      <!-- What are you looking for -->
-      <!-- Cards -->
-      <!-- View More Listings -->
+    <main id="main">
+      <!-- Search ribbon -->
+      <div id="main__intro">
+        <p>WHAT ARE YOU LOOKING FOR?</p>
+        <button onclick="document.getElementById('header__nav').scrollIntoView({behavior: 'smooth'})">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+          </svg>
+        </button>
+      </div>
+      <!-- Product cards -->
+      <div id="main__cards">
+        <article class="card__wrap">
+          <div class="card__block">
+            <div class="card__text">
+              <h2 class="card__title">Lorem ipsum dolor sit.</h2>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card__pic">
+              <p class="card__price">1000€</p>
+              <img class="card__img" src="./img/01-img.jpg" alt="Picture of 5 armchairs around a table facing a bay window.">
+            </div>
+          </div>
+        </article>
+        <article class="card__wrap">
+          <div class="card__block">
+            <div class="card__text">
+              <h2 class="card__title">Lorem ipsum dolor sit.</h2>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card__pic">
+              <p class="card__price">1200€</p>
+              <img class="card__img" src="./img/02-img.jpg" alt="Picture of a modern living room, with a large carpet on the floor, a large mirror on the wall and green plants.">
+            </div>
+          </div>
+        </article>
+        <article class="card__wrap">
+          <div class="card__block">
+            <div class="card__text">
+              <h2 class="card__title">Lorem ipsum dolor sit.</h2>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card__pic">
+              <p class="card__price">1500€</p>
+              <img class="card__img" src="./img/03-img.jpg" alt="Picture of a modern hallway with a large mirror and a console.">
+            </div>
+          </div>
+        </article>
+        <article class="card__wrap">
+          <div class="card__block">
+            <div class="card__text">
+              <h2 class="card__title">Lorem ipsum dolor sit.</h2>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card__pic">
+              <p class="card__price">900€</p>
+              <img class="card__img" src="./img/04-img.jpg" alt="Picture of a modern study room with books piled on the floor, facing outside trees.">
+            </div>
+          </div>
+        </article>
+        <article class="card__wrap">
+          <div class="card__block">
+            <div class="card__text">
+              <h2 class="card__title">Lorem ipsum dolor sit.</h2>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card__pic">
+              <p class="card__price">2000€</p>
+              <img class="card__img" src="./img/05-img.jpg" alt="Picture of 4 armchairs around a wooden table with a vase filled with flowers.">
+            </div>
+          </div>
+        </article>
+        <article class="card__wrap">
+          <div class="card__block">
+            <div class="card__text">
+              <h2 class="card__title">Lorem ipsum dolor sit.</h2>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card__pic">
+              <p class="card__price">1800€</p>
+              <img class="card__img" src="./img/06-img.jpg" alt="Picture of a sitting room with a large carpet on the floor and 2 small couches seen in a large mirror's reflection.">
+            </div>
+          </div>
+        </article>
+        <article class="card__wrap">
+          <div class="card__block">
+            <div class="card__text">
+              <h2 class="card__title">Lorem ipsum dolor sit.</h2>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card__pic">
+              <p class="card__price">1000€</p>
+              <img class="card__img" src="./img/07-img.jpg" alt="Picture of a modern sitting room with couches and armchairs around a coffee table, facing a bay window in front of buildings.">
+            </div>
+          </div>
+        </article>
+        <article class="card__wrap">
+          <div class="card__block">
+            <div class="card__text">
+              <h2 class="card__title">Lorem ipsum dolor sit.</h2>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card__pic">
+              <p class="card__price">1750€</p>
+              <img class="card__img" src="./img/08-img.jpg" alt="Picture of a couch with cushions behind a coffee table, next to a sofa table with a vase holding flowers.">
+            </div>
+          </div>
+        </article>
+        <article class="card__wrap">
+          <div class="card__block">
+            <div class="card__text">
+              <h2 class="card__title">Lorem ipsum dolor sit.</h2>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card__pic">
+              <p class="card__price">1600€</p>
+              <img class="card__img" src="./img/09-img.jpg" alt="Picture of a modern reading room with armchairs next to a fire place.">
+            </div>
+          </div>
+        </article>
+      </div>
+      <!-- Add-more-cards button -->
+      <div id="main__end">
+        <button>View more listings</button>
+      </div>
     </main>
     <footer>
       <!-- Internal links -->
